@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                          // Use the latest ECMAScript standard
+    "module": "CommonJS",                        // Use commonJS for module imports/exports
+    "strict": true,                              // Enable strict type checking
+    "esModuleInterop": true,                     // Allows default imports from CommonJS modules
+    "skipLibCheck": true,                        // Skip type checking for third-party libraries
+    "forceConsistentCasingInFileNames": true,    // Ensure consistent casing in imports
+    "moduleResolution": "node",                  // Resolve modules using Node.js module resolution
+    "resolveJsonModule": true,                   // Allow importing JSON files
+    "isolatedModules": true,                     // Ensure TypeScript processes only the files used
+    "jsx": "react",                              // JSX setting, only needed if using React
+    "types": ["node", "playwright"]              // Include type definitions for Node.js and Playwright
+  },
+  "include": [
+    "tests/**/*.ts",                             // Include all test files
+    "page_objects/**/*.ts",                      // Include all POM files
+    "playwright.config.ts"                       // Include the Playwright config file
+  ],
+  "exclude": [
+    "node_modules"                               // Exclude the `node_modules` directory
+  ]
+}
